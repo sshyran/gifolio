@@ -2,12 +2,12 @@
 <html lang="en"> 
 <head>
   <meta charset="utf-8">
-  <title>Jxnblk Gifolio</title>
-  <meta name="author" content="Brent Jackson">
-  <meta name="description" content="Gif Portfolio of Jxnblk">
+  <title>MRMRS Gifolio</title>
+  <meta name="author" content="Adam Morse">
+  <meta name="description" content="Gif Portfolio of mrmrs">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="http://jxnblk.com/favicon.png" />
-  <link rel="apple-touch-icon-precomposed" href="http://jxnblk.com/apple-touch-icon.png" />
+  <!--<link rel="icon" href="http://jxnblk.com/favicon.png" />-->
+  <!--  <link rel="apple-touch-icon-precomposed" href="http://jxnblk.com/apple-touch-icon.png" />-->
   <link rel="stylesheet" href="http://jxnblk.com/scss/style.css" />
   
   <style>
@@ -40,7 +40,7 @@
   <script src="plangular.js"></script>
 
 </head>
-<body ng-app="plangular" plangular data-src="https://soundcloud.com/bananair/windowlicker">
+<body ng-app="plangular" plangular data-src="https://soundcloud.com/jxnblk/american-party">
 
   <div class="min-h100 mobile-table center">
     <div class="mobile-table-cell">
@@ -59,7 +59,7 @@
             <path d="M92.014,58.893c-3.002-2.749-6.411-4.143-10.139-4.143c-3.391,0-6.553,1.355-8.229,2.517 c-0.682,0.472-0.852,1.406-0.38,2.087s1.406,0.852,2.087,0.379c1.426-0.987,3.996-1.983,6.521-1.983 c2.994,0,5.646,1.096,8.111,3.356C90.274,61.37,90.638,61.5,91,61.5c0.405,0,0.81-0.164,1.105-0.487 C92.665,60.403,92.624,59.453,92.014,58.893z"/>
         </svg>
       </div>
-      <img ng-if="player.playing && currentTime > 21500" src="http://jxnblk.com/gifolio/gifolio-5.gif" class=""/>
+      <img ng-if="player.playing && currentTime > 21500" src="gifolio.gif" class="" style="width:100%;" />
       <h1 ng-hide="player.playing">Please turn up the volume & click</h1>
     </div>
   </div>
@@ -68,14 +68,17 @@
   <div class="absolute t0 r0 b0 l0 pointer" ng-hide="player.playing" ng-click="player.play(track)"></div>
   <div class="absolute t0 r0 b0 l0 pointer" ng-hide="!player.playing" ng-click="player.pause()"></div>
   <div ng-show="player.playing" class="h5 leading-3 right-align p1 mid-gray">
-    <a href="https://twitter.com/intent/tweet?text=Gifolio:&url=http://jxnblk.github.io/gifolio&via=jxnblk" target="_blank" class="button button-small mr1 button-box-gray">
+    <a href="https://twitter.com/intent/tweet?text=Gifolio:&url=http://mrmrs.io/gifolio&via=mrmrs_" target="_blank" class="button button-small mr1 button-box-gray">
       <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
         <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"/>
       </svg>
       Tweet
     </a>
-    Music by Aphex Twin
+    Music by jxnblk
   </div>
+  <footer>
+    <p>Built using plangular and gifolio</p>
+  </footer>
 
 </body>
 </html>
