@@ -9,10 +9,14 @@
   <!--<link rel="icon" href="http://jxnblk.com/favicon.png" />-->
   <!--  <link rel="apple-touch-icon-precomposed" href="http://jxnblk.com/apple-touch-icon.png" />-->
   <link rel="stylesheet" href="http://jxnblk.com/scss/style.css" />
+  <link rel="stylesheet" href="http://mrmrs.io/tachyons/css/i.css" />
   
   <style>
+
+    html,body { background: #111; color: #eee; }
     body { font-family: avenir, helvetica, arial, sans-serif; }
-    img { max-width: 100%; }
+    h1 { font-size: 1.5em; text-transform:uppercase; letter-spacing: 0.13em; }
+    img { max-width: 720px; }
     @-webkit-keyframes fadein {
       from { -webkit-transform: scale(.5); opacity: 0; }
         to {  -webkit-transform: scale(1); opacity: 1; }
@@ -64,17 +68,17 @@
 
   <div class="absolute t0 r0 b0 l0 pointer" ng-hide="player.playing" ng-click="player.play(track)"></div>
   <div class="absolute t0 r0 b0 l0 pointer" ng-hide="!player.playing" ng-click="player.pause()"></div>
-  <div ng-show="player.playing" class="h5 leading-3 right-align p1 mid-gray">
-    <a href="https://twitter.com/intent/tweet?text=Gifolio:&url=http://mrmrs.io/gifolio&via=mrmrs_" target="_blank" class="button button-small mr1 button-box-gray">
+  <footer ng-show="player.playing" class="pam">
+  <div class="h5 leading-3 right-align mid-gray">
+    <p class="dib">Built using <a href="http://jxnblk.github.io/plangular" title="plangular">plangular</a> and <a href="http://github.com/jxnblk/gitfolio/" title="gifolio by jxnblk">gifolio</a></p>
+    <a href="https://twitter.com/intent/tweet?text=Gifolio:&url=http://mrmrs.io/gifolio&via=mrmrs_" target="_blank" class="button button-small mr1 button-box-white" style="font-weight: 400; border-color: #fff; " >
       <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-        <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"/>
+        <path fill="#fff" d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"/>
       </svg>
       Tweet
     </a>
     Music by jxnblk
   </div>
-  <footer>
-    <p>Built using plangular and gifolio</p>
   </footer>
 
 </body>
