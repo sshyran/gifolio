@@ -11,7 +11,7 @@
 'use strict';
 
 var plangular = angular.module('plangular', []),
-    clientID = '0d33361983f16d2527b01fbf6408b7d7',
+    clientID = 'fd7e271ec94e7b5f25aa292978588b03',
     iconUrl = 'icons/plangular-icons.svg';
 
 plangular.directive('plangular', function ($document, $rootScope, $http) {
@@ -80,7 +80,7 @@ plangular.directive('plangular', function ($document, $rootScope, $http) {
         if (player.tracks.length > 0) player.next();
         else player.pause();
       });
-      
+
     }, false);
 
     // Returns the player, audio, track, and other objects
@@ -108,7 +108,7 @@ plangular.directive('plangular', function ($document, $rootScope, $http) {
             scope.$apply(function() {
               scope.currentTime = (audio.currentTime * 1000).toFixed();
               scope.duration = (audio.duration * 1000).toFixed();
-            });  
+            });
           };
         }, false);
 
@@ -156,9 +156,9 @@ plangular.filter('playTime', function() {
           secs = secs.substr(secs.length - 2);
       if(!isNaN(secs)){
         if (hours){
-          return hours+':'+mins+':'+secs;  
+          return hours+':'+mins+':'+secs;
         } else {
-          return mins+':'+secs;  
+          return mins+':'+secs;
         };
       } else {
         return '00:00';
